@@ -10,7 +10,7 @@ public class Konto {
         this.saldo = saldo;
     }
 
-    public Konto (String navn) { // overloaded constructor
+    public Konto(String navn) { // overloaded constructor
 
         this.navn = navn;
         this.saldo = 0;
@@ -24,5 +24,14 @@ public class Konto {
     public String getNavn() {
 
         return navn;
+    }
+
+    public int deposit(int i) {
+
+        if (i > 0) {
+            saldo = saldo + i;
+
+        }
+        return saldo;
     }
 }
