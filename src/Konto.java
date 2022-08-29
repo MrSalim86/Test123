@@ -1,7 +1,7 @@
 
 public class Konto {
 
-    String navn;
+    private String navn;
     private int saldo;
 
 
@@ -14,5 +14,15 @@ public class Konto {
 
         this.navn = navn;
         this.saldo = 0;
+    }
+
+    public int getSaldo() {
+
+        return saldo;
+    }
+
+    public String getNavn() {
+
+        return navn;
     }
 }
